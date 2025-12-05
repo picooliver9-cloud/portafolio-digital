@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Digital - Universidad Técnica de Ambato</title>
+    <!-- Importar fuentes llamativas de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Mariposas volando -->
+    <div class="butterfly"></div>
+    <div class="butterfly"></div>
+    <div class="butterfly"></div>
+    <div class="butterfly"></div>
+    <div class="butterfly"></div>
+    <div class="butterfly"></div>
+    <div class="butterfly"></div>
+    <div class="butterfly"></div>
+
+    <div class="container">
+        <!-- Encabezado -->
+        <div class="header">
+            <div class="header-icon">👩‍🎓</div>
+            <h1>UNIVERSIDAD TÉCNICA DE AMBATO</h1>
+            <h2>FACULTAD DE CONTABILIDAD Y AUDITORÍA</h2>
+            <h3>PORTAFOLIO DIGITAL</h3>
+        </div>
+
+        <!-- Sección 1 -->
+        <div class="section section1">
+            <h4>1. MATERIA</h4>
+            <div class="upload-controls">
+                <input type="file" class="file-input" id="file1" accept=".doc,.docx,.pdf,.jpg,.jpeg,.png" multiple>
+                <button class="upload-btn" onclick="uploadFile(1)">Subir Documento</button>
+                <button class="preview-btn" onclick="toggleFileList(1)">Vista Previa</button>
+            </div>
+            <div class="file-list" id="list1">
+                <h5>Documentos subidos:</h5>
+                <div class="file-items" id="items1"></div>
+            </div>
+        </div>
+
+        <!-- Sección 2 -->
+        <div class="section section2">
+            <h4>2. EXÁMENES</h4>
+            <div class="upload-controls">
+                <input type="file" class="file-input" id="file2" accept=".doc,.docx,.pdf,.jpg,.jpeg,.png" multiple>
+                <button class="upload-btn" onclick="uploadFile(2)">Subir Documento</button>
+                <button class="preview-btn" onclick="toggleFileList(2)">Vista Previa</button>
+            </div>
+            <div class="file-list" id="list2">
+                <h5>Documentos subidos:</h5>
+                <div class="file-items" id="items2"></div>
+            </div>
+        </div>
+
+        <!-- Sección 3 -->
+        <div class="section section3">
+            <h4>3. APE</h4>
+            <div class="upload-controls">
+                <input type="file" class="file-input" id="file3" accept=".doc,.docx,.pdf,.jpg,.jpeg,.png" multiple>
+                <button class="upload-btn" onclick="uploadFile(3)">Subir Documento</button>
+                <button class="preview-btn" onclick="toggleFileList(3)">Vista Previa</button>
+            </div>
+            <div class="file-list" id="list3">
+                <h5>Documentos subidos:</h5>
+                <div class="file-items" id="items3"></div>
+            </div>
+        </div>
+
+        <!-- Sección 4 -->
+        <div class="section section4">
+            <h4>4. DEBERES</h4>
+            <div class="upload-controls">
+                <input type="file" class="file-input" id="file4" accept=".doc,.docx,.pdf,.jpg,.jpeg,.png" multiple>
+                <button class="upload-btn" onclick="uploadFile(4)">Subir Documento</button>
+                <button class="preview-btn" onclick="toggleFileList(4)">Vista Previa</button>
+            </div>
+            <div class="file-list" id="list4">
+                <h5>Documentos subidos:</h5>
+                <div class="file-items" id="items4"></div>
+            </div>
+        </div>
+
+        <!-- Sección 6 -->
+        <div class="section section6">
+            <h4>5. CONSULTAS A COMPUTADORA</h4>
+            <div class="upload-controls">
+                <input type="file" class="file-input" id="file6" accept=".doc,.docx,.pdf,.jpg,.jpeg,.png" multiple>
+                <button class="upload-btn" onclick="uploadFile(6)">Subir Documento</button>
+                <button class="preview-btn" onclick="toggleFileList(6)">Vista Previa</button>
+            </div>
+            <div class="file-list" id="list6">
+                <h5>Documentos subidos:</h5>
+                <div class="file-items" id="items6"></div>
+            </div>
+        </div>
+
+        <!-- Sección 7 -->
+        <div class="section section7">
+            <h4>6. EKOS</h4>
+            <div class="upload-controls">
+                <input type="file" class="file-input" id="file7" accept=".doc,.docx,.pdf,.jpg,.jpeg,.png" multiple>
+                <button class="upload-btn" onclick="uploadFile(7)">Subir Documento</button>
+                <button class="preview-btn" onclick="toggleFileList(7)">Vista Previa</button>
+            </div>
+            <div class="file-list" id="list7">
+                <h5>Documentos subidos:</h5>
+                <div class="file-items" id="items7"></div>
+            </div>
+        </div>
+
+        <!-- Sección 8 -->
+        <div class="section section8">
+            <h4>7. LECTURA CRÍTICA DE MATEMÁTICAS</h4>
+            <div class="upload-controls">
+                <input type="file" class="file-input" id="file8" accept=".doc,.docx,.pdf,.jpg,.jpeg,.png" multiple>
+                <button class="upload-btn" onclick="uploadFile(8)">Subir Documento</button>
+                <button class="preview-btn" onclick="toggleFileList(8)">Vista Previa</button>
+            </div>
+            <div class="file-list" id="list8">
+                <h5>Documentos subidos:</h5>
+                <div class="file-items" id="items8"></div>
+            </div>
+        </div>
+
+        <!-- Sección 9 -->
+        <div class="section section9">
+            <h4>8. ANEXOS</h4>
+            <div class="upload-controls">
+                <input type="file" class="file-input" id="file9" accept=".doc,.docx,.pdf,.jpg,.jpeg,.png" multiple>
+                <button class="upload-btn" onclick="uploadFile(9)">Subir Documento</button>
+                <button class="preview-btn" onclick="toggleFileList(9)">Vista Previa</button>
+            </div>
+            <div class="file-list" id="list9">
+                <h5>Documentos subidos:</h5>
+                <div class="file-items" id="items9"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para vista previa ampliada -->
+    <div id="previewModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="modalTitle">Vista Previa del Documento</h4>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="previewContent">
+                    <div class="preview-container">
+                        <iframe id="previewFrame"></iframe>
+                        <div id="previewMessage" class="preview-message" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+const API_URL = 'http://localhost:3000';
+
+// Al cargar la página, cargar archivos
+document.addEventListener('DOMContentLoaded', () => {
+    loadAllFiles();
+});
+
+// Función para subir archivos
+async function uploadFile(section) {
+    const input = document.getElementById(`file${section}`);
+    const files = input.files;
+    
+    if (files.length === 0) {
+        alert('Por favor selecciona al menos un archivo PDF');
+        return;
+    }
+    
+    for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        
+        // Verificar que sea PDF
+        if (!file.type.includes('pdf')) {
+            alert('Solo se permiten archivos PDF');
+            continue;
+        }
+        
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('section', section);
+        
+        try {
+            // Mostrar mensaje de carga
+            const itemsContainer = document.getElementById(`items${section}`);
+            const loadingMsg = document.createElement('div');
+            loadingMsg.className = 'loading';
+            loadingMsg.textContent = `Subiendo ${file.name}...`;
+            itemsContainer.appendChild(loadingMsg);
+            
+            const response = await fetch(`${API_URL}/upload`, {
+                method: 'POST',
+                body: formData
+            });
+            
+            const result = await response.json();
+            
+            // Remover mensaje de carga
+            itemsContainer.removeChild(loadingMsg);
+            
+            if (result.success) {
+                // Agregar archivo a la lista
+                addFileToList(section, result.file);
+                alert(`✅ ${file.name} subido correctamente`);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('❌ Error al subir el archivo');
+        }
+    }
+    
+    input.value = '';
+}
+
+// Agregar archivo a la lista
+function addFileToList(section, fileData) {
+    const itemsContainer = document.getElementById(`items${section}`);
+    
+    const fileItem = document.createElement('div');
+    fileItem.className = 'file-item';
+    
+    // Miniatura (usaremos un icono por ahora)
+    const filePreview = document.createElement('div');
+    filePreview.className = 'file-preview';
+    
+    // Icono de PDF con enlace
+    const pdfLink = document.createElement('a');
+    pdfLink.href = `${API_URL}${fileData.path}`;
+    pdfLink.target = '_blank';
+    
+    const pdfIcon = document.createElement('div');
+    pdfIcon.className = 'pdf-icon-large';
+    pdfIcon.innerHTML = '📄';
+    pdfIcon.title = 'Ver documento completo';
+    
+    pdfLink.appendChild(pdfIcon);
+    filePreview.appendChild(pdfLink);
+    
+    // Nombre del archivo
+    const fileName = document.createElement('div');
+    fileName.className = 'file-name';
+    fileName.textContent = fileData.name;
+    
+    // Fecha
+    const fileDate = document.createElement('div');
+    fileDate.className = 'file-date';
+    const date = new Date(fileData.date);
+    fileDate.textContent = `Subido: ${date.toLocaleDateString()}`;
+    
+    // Acciones
+    const fileActions = document.createElement('div');
+    fileActions.className = 'file-actions';
+    
+    const viewBtn = document.createElement('button');
+    viewBtn.className = 'view-btn';
+    viewBtn.textContent = 'Ver PDF';
+    viewBtn.onclick = () => window.open(`${API_URL}${fileData.path}`, '_blank');
+    
+    const downloadBtn = document.createElement('button');
+    downloadBtn.className = 'download-btn';
+    downloadBtn.textContent = 'Descargar';
+    downloadBtn.onclick = () => {
+        const link = document.createElement('a');
+        link.href = `${API_URL}${fileData.path}`;
+        link.download = fileData.name;
+        link.click();
+    };
+    
+    fileActions.appendChild(viewBtn);
+    fileActions.appendChild(downloadBtn);
+    
+    fileItem.appendChild(filePreview);
+    fileItem.appendChild(fileName);
+    fileItem.appendChild(fileDate);
+    fileItem.appendChild(fileActions);
+    itemsContainer.appendChild(fileItem);
+}
+
+// Cargar todos los archivos
+async function loadAllFiles() {
+    for (let section = 1; section <= 9; section++) {
+        if (section === 5) continue;
+        
+        try {
+            const response = await fetch(`${API_URL}/files/${section}`);
+            const result = await response.json();
+            
+            if (result.files && result.files.length > 0) {
+                result.files.forEach(fileData => {
+                    addFileToList(section, fileData);
+                });
+            }
+        } catch (error) {
+            console.log(`No hay archivos en sección ${section} o error:`, error);
+        }
+    }
+}
+
+// Mantener las demás funciones igual...
+function toggleFileList(section) {
+    const fileList = document.getElementById(`list${section}`);
+    fileList.style.display = fileList.style.display === 'block' ? 'none' : 'block';
+}
+
+// Cerrar modal
+document.querySelector('.close-btn').onclick = function() {
+    document.getElementById('previewModal').style.display = 'none';
+    document.getElementById('previewFrame').src = '';
+};
+
+window.onclick = function(event) {
+    const modal = document.getElementById('previewModal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+        document.getElementById('previewFrame').src = '';
+    }
+};
+</script>
+</body>
+</html>
